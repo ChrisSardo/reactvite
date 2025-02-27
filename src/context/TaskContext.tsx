@@ -19,7 +19,7 @@ interface TaskContextType {
 
 const TaskContext = createContext<TaskContextType | undefined>(undefined)
 
-export const userTaskContext = () => {
+export const useTaskContext = () => {
     const context = useContext(TaskContext)
     if (!context) {
         throw new Error("useContext deve ser definido")
